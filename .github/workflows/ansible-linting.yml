@@ -26,4 +26,5 @@ jobs:
         uses: ansible/ansible-lint-action@v4.1.0.post0
         with:
           targets: |
-            Provision
+            Provision/Ubuntu/add_public_keys.yaml
+            Provision/Ubuntu/install_docker.yaml
