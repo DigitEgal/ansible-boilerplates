@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Ansible-Linting
 
 # Controls when the action will run. 
 on:
@@ -27,4 +25,5 @@ jobs:
         # uses: ansible/ansible-lint-action@38e9ebdc9c3c71e66e2a3e0a09f0b6c8bc005e46
         uses: ansible/ansible-lint-action@v4.1.0.post0
         with:
-          targets: ""
+          targets: |
+            "Provision"
