@@ -1,11 +1,21 @@
 ---
 - hosts: all
+  
   become: yes
   tasks:
+  
+  # Installs Microk8s
+  # --
   - name: install microk8s
     snap:
       classic: yes
       name: microk8s
+
+  # Sets User Permissions  
+  # --
+  # TODO: Make sure you replace user vagrant with your desired administrative
+  #       username for your remote server!
+  #
   - name: add userpermissions
     shell: "usermod -aG microk8s christian"
 
