@@ -1,8 +1,15 @@
 ---
 - hosts: all
+  
   become: yes
   tasks:
 
+  # Install Docker
+  # --
+  # 
+  # TODO: Make sure you replace user vagrant with your desired administrative
+  #       username for your remote server!
+  #
   - name: install prerequisites
     apt:
       name:
@@ -32,6 +39,12 @@
   - name: add userpermissions
     shell: "usermod -aG docker vagrant"
 
+  # Installs Docker SDK
+  # --
+  # 
+  # TODO: Make sure you replace user vagrant with your desired administrative
+  #       username for your remote server!
+  #
   - name: install python package manager
     apt:
       name: python3-pip
