@@ -1,4 +1,4 @@
-# Ansible Boilersplates
+# Ansible Boilerplates
 Here are some useful Ansible Playbooks, you can use as templates or examples for various projects.
 
 *Don't forget to watch my other repositories, for other DevOps tools and processes*
